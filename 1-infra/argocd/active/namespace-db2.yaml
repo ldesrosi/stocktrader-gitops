@@ -1,18 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: services-staging-secrets
+  name: namespace-db2
   annotations:
-    argocd.argoproj.io/sync-wave: "250"
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    argocd.argoproj.io/sync-wave: "100"    
 spec:
   destination:
-    namespace: staging
+    namespace: db2
     server: https://kubernetes.default.svc
-  project: services
+  project: infra
   source:
-    path: 2-services/instances/namespace-staging/secrets
+    path: 1-infra/namespaces/db2
     repoURL: https://github.com/ldesrosi/stocktrader-gitops.git
     targetRevision: master
   syncPolicy:

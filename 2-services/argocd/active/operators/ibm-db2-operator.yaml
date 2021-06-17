@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ibm-apic-operator
+  name: ibm-db2-operator
   annotations:
     argocd.argoproj.io/sync-wave: "230"
   labels:
@@ -14,12 +14,9 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: 2-services/operators/ibm-apic-operator
+    path: 2-services/operators/ibm-db2-operator
     repoURL: https://github.com/ldesrosi/stocktrader-gitops.git
     targetRevision: master
-    helm:
-      valueFiles:
-      - values.yaml
   syncPolicy:
     automated:
       prune: true

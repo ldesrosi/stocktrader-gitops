@@ -23,9 +23,9 @@ find ${SCRIPTDIR}/.. -name '*.yaml' -print0 |
   while IFS= read -r -d '' File; do
     if grep -q "kind: Application\|kind: AppProject" "$File"; then
       echo "$File"
-      sed -i'.bak' -e "s#repoURL: https://github.com/cloud-native-toolkit/multi-tenancy-gitops.git#repoURL: ${GIT_BASEURL}/${GIT_USER}/${GIT_REPO}#" $File
+      sed -i'.bak' -e "s#repoURL: https://github.com/ldesrosi/stocktrader-gitops.git#repoURL: ${GIT_BASEURL}/${GIT_USER}/${GIT_REPO}#" $File
       sed -i'.bak' -e "s#repoURL: github.com/cloud-native-toolkit/multi-tenancy-gitops.git#repoURL: ${GIT_HOST}/${GIT_USER}/${GIT_REPO}#" $File
-      sed -i'.bak' -e "s#- https://github.com/cloud-native-toolkit/multi-tenancy-gitops.git#- ${GIT_BASEURL}/${GIT_USER}/${GIT_REPO}#" $File
+      sed -i'.bak' -e "s#- https://github.com/ldesrosi/stocktrader-gitops.git#- ${GIT_BASEURL}/${GIT_USER}/${GIT_REPO}#" $File
       sed -i'.bak' -e "s#targetRevision: master#targetRevision: ${GIT_BRANCH}#" $File
       rm "${File}.bak"
     fi
