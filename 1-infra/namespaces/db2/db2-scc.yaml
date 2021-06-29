@@ -1,5 +1,5 @@
+apiVersion: security.openshift.io/v1
 kind: SecurityContextConstraints
-apiVersion: v1
 metadata:
     name: db2u-scc
     namespace: db2
@@ -34,4 +34,3 @@ fsGroup:
     type: RunAsAny
 supplementalGroups:
     type: RunAsAny
-version: v1
