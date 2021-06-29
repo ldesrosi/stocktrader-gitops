@@ -2,6 +2,7 @@ kind: SecurityContextConstraints
 apiVersion: v1
 metadata:
     name: db2u-scc
+    namespace: db2
 allowHostDirVolumePlugin: false
 allowHostIPC: false
 allowHostNetwork: false
