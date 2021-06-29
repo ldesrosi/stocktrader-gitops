@@ -54,7 +54,7 @@ rules:
     apiGroups:
       - 'cert-manager.io'
     resources:
-      - certificates
+      - certificate
   - verbs:
       - '*'
     apiGroups:
