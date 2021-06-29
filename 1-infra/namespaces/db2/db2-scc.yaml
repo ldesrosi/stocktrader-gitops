@@ -2,7 +2,7 @@ apiVersion: security.openshift.io/v1
 kind: SecurityContextConstraints
 metadata:
     name: db2u-scc
-    namespace: db2
+readOnlyRootFilesystem: true
 allowHostDirVolumePlugin: false
 allowHostIPC: false
 allowHostNetwork: false
@@ -25,7 +25,6 @@ allowedCapabilities:
 - "SYS_CHROOT"
 - "KILL"
 - "AUDIT_WRITE"
-priority: 10
 runAsUser:
     type: RunAsAny
 seLinuxContext:
