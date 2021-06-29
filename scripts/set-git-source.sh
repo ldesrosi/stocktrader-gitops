@@ -31,7 +31,7 @@ find ${SCRIPTDIR}/.. -name '*.yaml' -print0 |
     fi
     if grep -q "kind: Certificate" "$File"; then
       echo "$File"
-      sed -i'.bak' -e "s/<cluster-domain>/$CLUSTER_DOMAIN/g" $File
+      sed -i'.bak' -e "s/stock-trader-cluster-3a99165d2acc3a9ca65ba8c534430045-0000.eu-gb.containers.appdomain.cloud/$CLUSTER_DOMAIN/g" $File
       rm "${File}.bak"
     fi
   done

@@ -6,7 +6,7 @@ spec:
   commonName: any.common.name
   isCA: true
   dnsNames:
-    - *.<cluster-domain>
+    - *.stock-trader-cluster-3a99165d2acc3a9ca65ba8c534430045-0000.eu-gb.containers.appdomain.cloud
   secretName: mq-self-signed-ca-cert
   issuerRef:
     group: cert-manager.io
