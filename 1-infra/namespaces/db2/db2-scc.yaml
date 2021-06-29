@@ -1,6 +1,5 @@
 kind: SecurityContextConstraints
 apiVersion: v1
-apiGroup: security.openshift.io
 metadata:
     name: db2u-scc
 allowHostDirVolumePlugin: false
