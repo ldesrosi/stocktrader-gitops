@@ -1,7 +1,4 @@
-global: {
-  cloud: {
-    infraNodes: {
+global: 
+  cloud: 
+    infraNodes: 
       labels: 'storage'
-    }
-  }
-}
