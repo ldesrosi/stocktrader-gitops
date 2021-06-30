@@ -1,9 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: infraconfig
+  name: machinesets
   annotations:
-    argocd.argoproj.io/sync-wave: "102"
+    argocd.argoproj.io/sync-wave: "100"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -12,8 +12,8 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: 1-infra/infraconfig
-    repoURL: github.com/cloud-native-toolkit/multi-tenancy-gitops.git
+    path: 1-infra/machinesets
+    repoURL: https://github.com/ldesrosi/stocktrader-gitops.git
     targetRevision: master
   syncPolicy:
     automated:
