@@ -13,7 +13,7 @@ spec:
   project: infra
   source:
     path: 1-infra/storage
-    repoURL: github.com/cloud-native-toolkit/multi-tenancy-gitops.git
+    repoURL: https://github.com/ldesrosi/stocktrader-gitops.git
     targetRevision: master
   syncPolicy:
     automated:
