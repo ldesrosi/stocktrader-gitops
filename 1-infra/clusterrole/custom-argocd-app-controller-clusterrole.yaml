@@ -195,4 +195,4 @@ rules:
     apiGroups:
       - db2u.databases.ibm.com
     resources:
-      - '*'
+      - db2uclusters
