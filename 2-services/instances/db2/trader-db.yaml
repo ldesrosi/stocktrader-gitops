@@ -10,7 +10,7 @@ spec:
     privileged: true
     imagePullSecrets:
       - ibm-entitlement-key
-  version: "11.5.5.1"
+  version: "11.5.5.0-cn5"
   size: 1
   podConfig:
     db2u:
