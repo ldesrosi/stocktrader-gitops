@@ -190,3 +190,9 @@ rules:
       - imageregistry.operator.openshift.io
     resources:
       - '*'
+  - verbs:
+      - '*'
+    apiGroups:
+      - db2u.databases.ibm.com
+    resources:
+      - '*'

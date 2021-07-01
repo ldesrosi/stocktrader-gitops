@@ -61,6 +61,8 @@ spec:
     kind: ClusterIssuer
   - group: "cert-manager.io"
     kind: Certificate
+  - group: "db2u.databases.ibm.com"
+    kind: Db2uCluster
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
