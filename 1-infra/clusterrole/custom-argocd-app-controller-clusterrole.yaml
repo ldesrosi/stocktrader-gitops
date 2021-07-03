@@ -196,3 +196,9 @@ rules:
       - db2u.databases.ibm.com
     resources:
       - db2uclusters
+  - verbs:
+      - '*'
+    apiGroups:
+      - kafka.strimzi.io
+    resources:
+      - kafka
