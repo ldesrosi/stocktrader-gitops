@@ -1,7 +1,7 @@
 apiVersion: cert-manager.io/v1alpha3
 kind: ClusterIssuer
 metadata:
-  name: selfsigned-mq-cluster-issuer
+  name: selfsigned-cluster-issuer
 spec:
   ca:
-    secretName: mq-self-signed-ca-cert
+    secretName: self-signed-ca-cert

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: db2
+  name: dev
   annotations:
     argocd.argoproj.io/sync-wave: "250"
   labels:
@@ -10,11 +10,11 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: dev
+    namespace: kafka
     server: 'https://kubernetes.default.svc'
   project: services
   source:
-    path: 2-services/instances/db2
+    path: 2-services/instances/kafka
     repoURL: https://github.com/ldesrosi/stocktrader-gitops.git
     targetRevision: master
   syncPolicy:
