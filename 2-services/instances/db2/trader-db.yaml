@@ -24,8 +24,6 @@ spec:
             memory: 4Gi
   environment:
     dbType: db2oltp
-    instance:
-      password: db2password
   storage:
     - name: meta
       type: "create"
