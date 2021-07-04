@@ -2,7 +2,6 @@ apiVersion: db2u.databases.ibm.com/v1
 kind: Db2uCluster
 metadata:
   name: trader
-  namespace: db2
 spec:
   license:
     accept: true
