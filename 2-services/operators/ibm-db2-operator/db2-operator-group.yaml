@@ -4,4 +4,4 @@ metadata:
   name: db2-operator-group
 spec:
   targetNamespaces:
-  - db2
+  - dev
