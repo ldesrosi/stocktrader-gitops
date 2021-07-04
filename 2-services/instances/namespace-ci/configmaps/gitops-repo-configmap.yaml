@@ -1,13 +1,13 @@
 apiVersion: v1
 data:
-  branch: <branch>
+  branch: master
   host: github.com
-  org: <github-org>
-  owner: <github-id>
+  org: ldesrosi
+  owner: ldesrosi
   parentdir: .
   protocol: https
-  repo: multi-tenancy-gitops
-  url: https://github.com/<github-org>/multi-tenancy-gitops.git
+  repo: stocktrader-gitops
+  url: https://github.com/ldesrosi/stocktrader-gitops.git
 kind: ConfigMap
 metadata:
   labels:
