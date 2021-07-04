@@ -201,4 +201,4 @@ rules:
     apiGroups:
       - kafka.strimzi.io
     resources:
-      - kafka
+      - kafkas

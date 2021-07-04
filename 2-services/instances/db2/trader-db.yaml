@@ -17,10 +17,10 @@ spec:
       resource:
         db2u:
           requests:
-            cpu: 2
+            cpu: '2'
             memory: 4Gi
           limits:
-            cpu: 2
+            cpu: '2'
             memory: 4Gi
   environment:
     dbType: db2oltp
