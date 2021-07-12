@@ -67,6 +67,8 @@ spec:
     kind: Db2uCluster
   - group: "kafka.strimzi.io"
     kind: Kafka
+  - group: mq.ibm.com
+    kind: queuemanagers
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
