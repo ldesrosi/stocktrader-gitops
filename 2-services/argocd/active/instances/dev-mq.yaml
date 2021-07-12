@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-mq
+  annotations:
+    argocd.argoproj.io/sync-wave: "250"
+  labels:
+    gitops.tier.group: ibm-cloudpak
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: dev
+    server: 'https://kubernetes.default.svc'
+  project: services
+  source:
+    path: 2-services/instances/namespace-dev/mq-infra
+    repoURL: https://github.com/ldesrosi/stocktrader-gitops.git
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
