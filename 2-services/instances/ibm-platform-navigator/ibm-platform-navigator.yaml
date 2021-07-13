@@ -10,4 +10,4 @@ spec:
   version: 2021.2.1
   storage:
     class: ibmc-file-gold
-  replicas: 2
+  replicas: 1
