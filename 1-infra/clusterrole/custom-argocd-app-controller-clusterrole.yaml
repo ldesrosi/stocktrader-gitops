@@ -93,6 +93,7 @@ rules:
       - 'maistra.io'
     resources:
       - servicemeshcontrolplanes
+      - servicemeshmemberrolls
   - verbs:
       - create
       - list
